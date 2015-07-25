@@ -2,6 +2,10 @@
 
 图片（png/jpe?g）转换成base64格式，并通过tinypng接口压缩
 
+## Preview
+
+在线预览：[http://www.seejs.com/tinyimg/](http://www.seejs.com/tinyimg/)
+
 ## Usage
 
 首先，下载代码：
