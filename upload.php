@@ -19,7 +19,7 @@
     $min =  $path . '/file_' . $uid . '_tiny.' . $ext;
     move_uploaded_file($file['tmp_name'], $full);
 
-    Tinify\setKey('8VpY3PKyGK6AfziyN4ZkDJKZWbJHKRuE');
+    Tinify\setKey('YOUR_KEY');
     Tinify\fromFile($full)->toFile($min);
 
     $fullCode = $prefix . base64_encode(file_get_contents($full));
