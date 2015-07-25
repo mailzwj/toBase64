@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>图片转Base64并压缩</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <input type="file" name="" id="J_UploadFile" style="display: none;" multiple>
+    <div class="up-area" id="J_UploadArea">
+        点选或拖入文件
+    </div>
+    <div class="console" id="J_Console">
+        
+    </div>
+    <div class="spinner" id="J_Loading">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+    </div>
+<script type="text/template" id="J_CodeGroupTpl">
+    <div class="J_ImgLabel img-label" style="background-image: url({{tiny}});"></div>
+    <div class="code-group">
+        <div class="base-info">
+            压缩前：{{fullSize}}kb<br>
+            压缩后：{{tinySize}}kb<br>
+            压缩率：<span class="highlight">{{percent}}</span>
+        </div>
+        <div class="pannel-group">
+            <div class="J_SourceCode code-pannel">{{full}}</div>
+            <div class="J_TinyCode code-pannel">{{tiny}}</div>
+        </div>
+    </div>
+</script>
+<script src="js/index.js"></script>
+</body>
+</html>
